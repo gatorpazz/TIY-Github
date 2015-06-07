@@ -108,10 +108,12 @@ body {
   border-top: 1px solid #E0E0E0;
   border-bottom: 1px solid #E0E0E0;
   color: #4078C0;
+  font-weight: bold;
 }
 
 .tabs .active {
   border-top: 0.4ex solid #D26911;
+  color: black;
   background-color: white;
   padding-top: 0.6ex;
   padding-bottom: 1.1ex;
