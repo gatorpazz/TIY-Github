@@ -123,9 +123,14 @@ th {
 }
 
 .popRepo .fav {
+  color: #767676;
   float: right;
 }
 
+.popRepo .octicon-repo {
+  color: #767676;
+  padding-right: 0.3em;
+}
 
 
 
