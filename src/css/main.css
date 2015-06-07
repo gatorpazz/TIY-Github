@@ -99,6 +99,28 @@ body {
   background-color: #FAFAFA;
 }
 
+.tabs .tab {
+  display: inline-block;
+  text-align: center;
+  width: 50%;
+  background-color: #FAFAFA;
+  padding: 1ex 0;
+  border-top: 1px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
+  color: #4078C0;
+}
+
+.tabs .active {
+  border-top: 0.4ex solid #D26911;
+  background-color: white;
+  padding-top: 0.6ex;
+  padding-bottom: 1.1ex;
+}
+
+.tabs ul {
+  padding: 0;
+}
+
 .container {
   margin: 1ex;
 }
