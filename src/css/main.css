@@ -95,11 +95,36 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+  background-color: #FAFAFA;
+}
 
+.container {
+  margin: 1ex;
+}
 
+table {
+  background-color: white;
+  border: 1px solid #EBEBEB;
+  width: 100%;
+}
 
+th {
+  text-align: left;
+}
 
+.popRepo {
+  border-top: 1px solid #EBEBEB;
+  border-bottom: 1px solid #EBEBEB;
+}
 
+.popRepo td, th {
+  padding: 1ex;
+}
+
+.popRepo .fav {
+  float: right;
+}
 
 
 

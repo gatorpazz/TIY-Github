@@ -7,52 +7,54 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/octicons/octicons/octicons.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
 <body>
+  <div class="container">
     <table>
       <thead>
-        <tr>
-          <th>Popular Repositories</th>
+        <tr class="popRepo">
+          <th>Popular repositories</th>
         </tr>
       </thead>
         <tbody>
-            <tr>
+            <tr class="popRepo">
                 <td>
                     <span>octocat/Spoon-Knife</span>
-                    <span>9,772</span>
+                    <span class="fav">9,772</span>
                 </td>
             </tr>
-            <tr>
+            <tr class="popRepo">
                 <td>
                     <span>octocat/Hello-World</span>
-                    <span>1,403</span>
+                    <span class="fav">1,403</span>
                 </td>
             </tr>
-            <tr>
+            <tr class="popRepo">
                 <td>
                     <span>octocat/hello-world</span>
-                    <span>10</span>
+                    <span class="fav">10</span>
                 </td>
             </tr>
-            <tr>
+            <tr class="popRepo">
                 <td>
                     <span>octocat/octocat.github.io</span>
-                    <span>8</span>
+                    <span class="fav">8</span>
                 </td>
             </tr>
-            <tr>
+            <tr class="popRepo">
                 <td>
                     <span>octocat/git-consortium</span>
-                    <span>5</span>
+                    <span class="fav">5</span>
                 </td>
             </tr>
         </tbody>
     </table>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  </div>
     <script>
         window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
     </script>
