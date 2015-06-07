@@ -119,7 +119,18 @@ th {
 }
 
 .popRepo td, th {
-  padding: 1ex;
+  padding: 1ex 1em;
+}
+
+.popRepo td {
+  padding-top: 2ex;
+  padding-bottom: 2ex;
+}
+
+.popRepo .repo {
+  text-decoration: none;
+  color: #4078C0;
+  font-weight: bold;
 }
 
 .popRepo .fav {
