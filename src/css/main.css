@@ -122,11 +122,21 @@ body {
 
 .tabs ul {
   padding: 0;
+  margin: 0;
 }
 
 .top {
   background-color: white;
   border-bottom: 1px solid #EBEBEB;
+  margin-top: 3ex;
+}
+
+.repositories table {
+  border: none;
+}
+
+.repositories #first {
+  border-top: none;
 }
 
 .proDetails {
