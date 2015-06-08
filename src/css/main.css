@@ -115,12 +115,41 @@ body {
   border-top: 0.4ex solid #D26911;
   color: black;
   background-color: white;
-  padding-top: 0.6ex;
-  padding-bottom: 1.1ex;
+  padding-top: 0.8ex;
+  padding-bottom: 1ex;
 }
 
 .tabs ul {
   padding: 0;
+}
+
+.top {
+  background-color: white;
+}
+
+.proDetails {
+  padding-left: 1em;
+}
+
+.proDetails a {
+  float: left;
+  margin-right: 1em;
+}
+
+.proDetails h1 {
+  font-size: 14pt;
+  margin-bottom: 1ex;
+}
+
+.proDetails h3 {
+  font-size: 10pt;
+  margin-top: 0;
+  color: #797979;
+}
+
+.proDetails ul {
+  padding-left: 7.9em;
+  list-style: none;
 }
 
 .container {
