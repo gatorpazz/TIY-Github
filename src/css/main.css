@@ -113,6 +113,7 @@ body {
 
 .tabs .active {
   border-top: 0.4ex solid #D26911;
+  border-bottom: none;
   color: black;
   background-color: white;
   padding-top: 0.8ex;
@@ -139,17 +140,31 @@ body {
 .proDetails h1 {
   font-size: 14pt;
   margin-bottom: 1ex;
+  margin-left: 6.7em;
 }
 
 .proDetails h3 {
   font-size: 10pt;
   margin-top: 0;
+  margin-left: 9.5em;
   color: #797979;
 }
 
 .proDetails ul {
   padding-left: 7.9em;
   list-style: none;
+}
+
+.proDetails .octicon {
+  display: inline-block;
+  color: #797979;
+}
+
+.proDetails a {
+  margin: 0;
+  display: inline-block;
+  text-decoration: none;
+  color: #4078C0;
 }
 
 .container {
