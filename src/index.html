@@ -17,10 +17,10 @@
     <div class="top">
         <nav class="tabs">
             <ul>
-                <li class="tab active">About</li><li class="tab">Repositories</li>
+                <li class="tab active" id="about">About</li><li class="tab" id="repos">Repositories</li>
             </ul>
         </nav>
-        <div class="proDetails">
+        <div class="proDetails hide">
             <a href="https://avatars3.githubusercontent.com/u/583231?v=3&s=400">
                 <img src="https://avatars3.githubusercontent.com/u/583231?v=3&s=220" alt="Octocat Picture" height="110" width="110">
             </a>
@@ -34,7 +34,19 @@
             </ul>
         </div>
     </div>
-    <div class="container">
+    <div class="stats hide">
+    <button><span class="octicon octicon-person"></span> Follow</button>
+    <div class="stat">
+      <strong>1k</strong><br>Followers
+    </div>
+    <div class="stat">
+      <strong>2</strong><br>Starred
+    </div>
+    <div class="stat">
+      <strong>6</strong><br>Following
+    </div>
+  </div>
+    <div class="container hide">
         <table>
             <thead>
                 <tr class="popRepo">
