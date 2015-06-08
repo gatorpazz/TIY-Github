@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-   "test": "browser-sync start --server --files='src/js/*.js,src/test/index.html,test/spec/**/*.js' --startPath src/test/index.html",
-   "start": "browser-sync start --server --files='src/index.html, src/css/*.css, src/js/*.js' --startPath src/index.html"
+    "test": "browser-sync start --server --files='src/js/*.js,src/test/index.html,test/spec/**/*.js' --startPath src/test/index.html",
+    "start": "browser-sync start --server --files='src/index.html, src/css/*.css, src/js/*.js' --startPath src/index.html"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/gatorpazz/TIY-Github/issues"
   },
-  "homepage": "https://github.com/gatorpazz/TIY-Github"
+  "homepage": "https://github.com/gatorpazz/TIY-Github",
+  "devDependencies": {
+    "node-sass": "^3.1.2",
+    "wiredep": "^2.2.2"
+  }
 }
