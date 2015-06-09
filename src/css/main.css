@@ -81,6 +81,7 @@ body {
   background-color: #FAFAFA; }
 
 .tabs .tab {
+  cursor: pointer;
   display: inline-block;
   text-align: center;
   width: 50%;
@@ -117,23 +118,22 @@ body {
 .proDetails {
   padding-left: 1em; }
 
-.proDetails a {
-  float: left;
-  margin-right: 1em; }
+.details {
+  display:inline-block;
+  margin-left: 2em;
+}
 
 .proDetails h1 {
   font-size: 14pt;
-  margin-bottom: 1ex;
-  margin-left: 6.7em; }
+  margin-bottom: 1ex; }
 
 .proDetails h3 {
   font-size: 10pt;
   margin-top: 0;
-  margin-left: 9.5em;
   color: #797979; }
 
 .proDetails ul {
-  padding-left: 7.9em;
+  padding: 0;
   list-style: none; }
 
 .proDetails .octicon {
@@ -145,6 +145,10 @@ body {
   display: inline-block;
   text-decoration: none;
   color: #4078C0; }
+
+.proDetails #avatar {
+  float: left;
+}
 
 .container {
   margin: 1ex; }

@@ -10,6 +10,7 @@
     <!-- bower:css -->
     <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css" />
     <!-- endbower -->
+    <link rel="stylesheet" href="../bower_components/octicons/octicons/octicons.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
@@ -22,17 +23,19 @@
             </ul>
         </nav>
         <div class="proDetails hide">
-            <a href="https://avatars3.githubusercontent.com/u/583231?v=3&s=400">
-                <img src="https://avatars3.githubusercontent.com/u/583231?v=3&s=220" alt="Octocat Picture" height="110" width="110">
+            <a href="https://avatars3.githubusercontent.com/u/583231?v=3&s=400" id="avatar">
+                <img src="http://lorempixel.com/400/200/cats" alt="Octocat Picture" height="110" width="110" id="avatarPic">
             </a>
-            <h1>The Octocat</h1>
-            <h3>octocat</h3>
+            <div class="details">
+            <h1 id="proName">The Octocat</h1>
+            <h3 id="proLogin">octocat</h3>
             <ul>
-              <li><span class="octicon octicon-organization"></span> GitHub</li>
-              <li><span class="octicon octicon-location"></span> San Francisco</li>
-              <li><span class="octicon octicon-mail"></span> <a class="email" href="mailto:octocat@github.com">octocat@github.com</a></li>
-              <li><span class="octicon octicon-link"></span> <a class="blogLink" href="http://www.github.com/blog">http://www.github.com/blog</a></li>
+              <li id="proOrg"><span class="octicon octicon-organization"></span> {organization}</li>
+              <li id="proLoc"><span class="octicon octicon-location"></span> {location}</li>
+              <li id="proEmail"><span class="octicon octicon-mail"></span> <a class="email" href="mailto:octocat@github.com">{email}</a></li>
+              <li id="proLink"><span class="octicon octicon-link"></span> <a class="blogLink" href="http://www.github.com/blog">{link}</a></li>
             </ul>
+          </div>
         </div>
         <div class="repositories hidden">
           <table>
