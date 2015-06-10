@@ -27,13 +27,13 @@
                 <img src="http://lorempixel.com/400/200/cats" alt="Octocat Picture" height="110" width="110" id="avatarPic">
             </a>
             <div class="details">
-            <h1 id="proName">The Octocat</h1>
-            <h3 id="proLogin">octocat</h3>
+            <h1 id="proName">{name}</h1>
+            <h3 id="proLogin">{login}</h3>
             <ul>
-              <li id="proOrg"><span class="octicon octicon-organization"></span> {organization}</li>
-              <li id="proLoc"><span class="octicon octicon-location"></span> {location}</li>
-              <li id="proEmail"><span class="octicon octicon-mail"></span> <a class="email" href="mailto:octocat@github.com">{email}</a></li>
-              <li id="proLink"><span class="octicon octicon-link"></span> <a class="blogLink" href="http://www.github.com/blog">{link}</a></li>
+              <li><span class="octicon octicon-organization"></span><span id="proOrg">{organization}</span></li>
+              <li><span class="octicon octicon-location"></span><span id="proLoc">{location}</span></li>
+              <li id="proEmail"><span class="octicon octicon-mail"></span> <a class="email" href="mailto:octocat@github.com"><span id="email">{email}</span></a></li>
+              <li id="proLink"><span class="octicon octicon-link"></span> <a class="blogLink" href="http://www.github.com/blog"><span id="link">{link}</span></a></li>
             </ul>
           </div>
         </div>
@@ -42,7 +42,7 @@
               <tr class="popRepo" id="first">
                   <td>
                       <span class="octicon octicon-repo"></span>
-                      <span><a class="repo" href="https://github.com/octocat/Spoon-Knife">octocat/Spoon-Knife</a></span>
+                      <span data-repo="spoon"><a class="repo" href="https://github.com/octocat/Spoon-Knife">{full_name}</a></span>
                       <span class="fav">9,772
                           <span class="octicon octicon-star"></span>
                       </span>
@@ -51,7 +51,7 @@
               <tr class="popRepo">
                   <td>
                       <span class="octicon octicon-repo"></span>
-                      <span><a class="repo" href="https://github.com/octocat/Hello-World">octocat/Hello-World</a></span>
+                      <span data-repo="hello"><a class="repo" href={html_url}>{full_name}</a></span>
                       <span class="fav">1,403
                           <span class="octicon octicon-star"></span>
                       </span>
@@ -60,7 +60,7 @@
               <tr class="popRepo">
                   <td>
                       <span class="octicon octicon-repo"></span>
-                      <span><a class="repo" href="https://github.com/octocat/hello-world">octocat/hello-world</a></span>
+                      <span data-repo="hello2"><a class="repo" href="oink">sucky</a></span>
                       <span class="fav">10
                           <span class="octicon octicon-star"></span>
                       </span>
@@ -69,7 +69,7 @@
               <tr class="popRepo">
                   <td>
                       <span class="octicon octicon-repo"></span>
-                      <span><a class="repo" href="https://github.com/octocat/octocat.github.io">octocat/octocat.github.io</a></span>
+                      <span data-repo="io"><a class="repo" href="la">idk</a></span>
                       <span class="fav">8
                           <span class="octicon octicon-star"></span>
                       </span>
@@ -78,7 +78,7 @@
               <tr class="popRepo">
                   <td>
                       <span class="octicon octicon-repo"></span>
-                      <span><a class="repo" href="https://github.com/octocat/git-consortium">octocat/git-consortium</a></span>
+                      <span data-repo="consort"><a class="repo" href="rrrr">aaa</a></span>
                       <span class="fav">5
                           <span class="octicon octicon-star"></span>
                       </span>
@@ -90,13 +90,13 @@
     <div class="stats hide">
     <button><span class="octicon octicon-person"></span> Follow</button>
     <div class="stat">
-      <strong>{followers}</strong><br>Followers
+      <strong id="followers">{followers}</strong><br>Followers
     </div>
     <div class="stat">
-      <strong>{starred}</strong><br>Starred
+      <strong id="starred">{starred}</strong><br>Starred
     </div>
     <div class="stat">
-      <strong>{following}</strong><br>Following
+      <strong id="following">{following}</strong><br>Following
     </div>
   </div>
     <div class="container hide">
@@ -110,7 +110,7 @@
                 <tr class="popRepo">
                     <td>
                         <span class="octicon octicon-repo"></span>
-                        <span><a class="repo" href="https://github.com/octocat/Spoon-Knife">octocat/Spoon-Knife</a></span>
+                        <span data-repo="spoon"><a class="repo" href="aaaa">aaaa</a></span>
                         <span class="fav">9,772
                             <span class="octicon octicon-star"></span>
                         </span>
@@ -119,7 +119,7 @@
                 <tr class="popRepo">
                     <td>
                         <span class="octicon octicon-repo"></span>
-                        <span><a class="repo" href="https://github.com/octocat/Hello-World">octocat/Hello-World</a></span>
+                        <span data-repo="hello"><a class="repo" href="aaa">aaa</a></span>
                         <span class="fav">1,403
                             <span class="octicon octicon-star"></span>
                         </span>
@@ -128,7 +128,7 @@
                 <tr class="popRepo">
                     <td>
                         <span class="octicon octicon-repo"></span>
-                        <span><a class="repo" href="https://github.com/octocat/hello-world">octocat/hello-world</a></span>
+                        <span data-repo="hello2"><a class="repo" href="aaa">aaa</a></span>
                         <span class="fav">10
                             <span class="octicon octicon-star"></span>
                         </span>
@@ -137,7 +137,7 @@
                 <tr class="popRepo">
                     <td>
                         <span class="octicon octicon-repo"></span>
-                        <span><a class="repo" href="https://github.com/octocat/octocat.github.io">octocat/octocat.github.io</a></span>
+                        <span data-repo="io"><a class="repo" href="https://github.com/octocat/octocat.github.io">aaa</a></span>
                         <span class="fav">8
                             <span class="octicon octicon-star"></span>
                         </span>
@@ -146,7 +146,7 @@
                 <tr class="popRepo">
                     <td>
                         <span class="octicon octicon-repo"></span>
-                        <span><a class="repo" href="https://github.com/octocat/git-consortium">octocat/git-consortium</a></span>
+                        <span data-repo="consort"><a class="repo" href="aaa">aaa</a></span>
                         <span class="fav">5
                             <span class="octicon octicon-star"></span>
                         </span>
@@ -155,8 +155,13 @@
             </tbody>
         </table>
     </div>
+    <select id="changePro">
+      <option value="octocat">octocat</option>
+      <option value="gatorpazz">gatorpazz</option>
+    </select>
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/lodash/lodash.min.js"></script>
     <!-- endbower -->
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
