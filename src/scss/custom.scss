@@ -1,0 +1,137 @@
+body {
+  background-color: #FAFAFA; }
+
+.tabs .tab {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  width: 50%;
+  background-color: #FAFAFA;
+  padding: 1ex 0;
+  border-top: 1px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
+  color: #4078C0;
+  font-weight: bold; }
+
+.tabs .active {
+  border-top: 0.4ex solid #D26911;
+  border-bottom: none;
+  color: black;
+  background-color: white;
+  padding-top: 0.8ex;
+  padding-bottom: 1ex; }
+
+.tabs ul {
+  padding: 0;
+  margin: 0; }
+
+.top {
+  background-color: white;
+  border-bottom: 1px solid #EBEBEB;
+  margin-top: 3ex; }
+
+.repositories table {
+  border: none; }
+
+.repositories #first {
+  border-top: none; }
+
+.proDetails {
+  padding-left: 1em; }
+
+.details {
+  display:inline-block;
+  margin-left: 2em;
+}
+
+.proDetails h1 {
+  font-size: 14pt;
+  margin-bottom: 1ex; }
+
+.proDetails h3 {
+  font-size: 10pt;
+  margin-top: 0;
+  color: #797979; }
+
+.proDetails ul {
+  padding: 0;
+  list-style: none; }
+
+.proDetails .octicon {
+  display: inline-block;
+  color: #797979; }
+
+.proDetails a {
+  margin: 0;
+  display: inline-block;
+  text-decoration: none;
+  color: #4078C0; }
+
+.proDetails #avatar {
+  float: left;
+}
+
+.container {
+  margin: 1ex; }
+
+.stats button {
+  width: 100%;
+  margin-top: 1ex;
+  margin-bottom: 2ex;
+  color: white;
+  background: linear-gradient(#89DC6C, #64B448);
+  border: 1px solid #5CA941;
+  font-size: 9pt;
+  font-weight: bold;
+  padding: 1.5ex 0;
+  border-radius: 2%; }
+
+.stats {
+  padding: 1ex 1ex 3ex 1ex;
+  border-bottom: 1px solid #EBEBEB; }
+
+.stats .stat {
+  width: 32%;
+  display: inline-block;
+  text-align: center;
+  font-size: 8pt;
+  line-height: 1; }
+
+.stats .stat strong {
+  font-size: 15pt; }
+
+table {
+  background-color: white;
+  border: 1px solid #EBEBEB;
+  width: 100%;
+  border-radius: 2%; }
+
+th {
+  text-align: left; }
+
+.popRepo {
+  border-top: 1px solid #EBEBEB;
+  border-bottom: 1px solid #EBEBEB; }
+
+.popRepo td, th {
+  padding: 1ex 1em; }
+
+.popRepo td {
+  padding-top: 2ex;
+  padding-bottom: 2ex; }
+
+.popRepo .repo {
+  text-decoration: none;
+  color: #4078C0;
+  font-weight: bold; }
+
+.popRepo .fav {
+  color: #767676;
+  float: right; }
+
+.popRepo .octicon-repo {
+  color: #767676;
+  padding-right: 0.3em; }
+
+.hidden {
+  display: none; }

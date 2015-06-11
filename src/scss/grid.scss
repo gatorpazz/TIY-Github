@@ -1,0 +1,82 @@
+
+.grid {
+  $grid-width: 100%;
+  $unit: ($grid-width/5);
+  max-width: 80%;
+
+  @extend .clearfix;
+  width: $grid-width;
+  // outline: 2px solid blue;
+  margin: 0 auto;
+
+  .unit {
+    float: left;
+    width: $unit;
+    height: 2em;
+    line-height: 2em;
+    // background-color: lightgray;
+    // outline: 2px solid blue;
+    box-sizing: border-box;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .unit-2 {
+    @extend .unit;
+    width: $unit * 2;
+    // background-color: lightblue;
+  }
+
+  .unit-3 {
+    @extend .unit;
+    width: $unit * 3;
+    // background-color: lightgreen;
+  }
+
+  .unit-4 {
+    @extend .unit;
+    width: $unit * 4;
+    // background-color: pink;
+  }
+
+  .unit-5 {
+    @extend .unit;
+    width: $unit * 5;
+    // background-color: orange;
+  }
+
+  .offset-1 {
+    margin-left: $unit;
+  }
+
+  .offset-2 {
+    margin-left: $unit * 2;
+  }
+
+  .offset-3 {
+    margin-left: $unit * 3;
+  }
+
+  .offset-4 {
+    margin-left: $unit * 4;
+  }
+
+}
+
+@media screen and (max-width: 30em) {
+
+  .grid {
+
+    .unit {
+      width: 100%;
+    }
+
+    .unit-2 {
+      width: 100%;
+    }
+
+    .unit-3 {
+      width: 100%;
+    }
+  }
+}
