@@ -1,2 +1,4 @@
 bower_components
 node_modules
+src/css/main.ss
+src/css/main.css
