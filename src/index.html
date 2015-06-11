@@ -17,7 +17,7 @@
 <body>
 
 
-  <section class="grid">
+  <!-- <section class="grid">
       <div class="unit">1</div>
       <div class="unit">2</div>
       <div class="unit">3</div>
@@ -74,18 +74,19 @@
   <section class="grid">
       <div class="unit-3">1</div>
       <div class="unit offset-1">2</div>
-  </section>
-
-    <div class="top">
-        <nav class="tabs">
-            <ul>
-                <li class="tab active" id="about">About</li><li class="tab" id="repos">Repositories</li>
-            </ul>
-        </nav>
+  </section> -->
+  <div id=superContainer>
+  <nav class="tabs">
+      <ul>
+          <li class="tab active" id="about">About</li><li class="tab" id="repos">Repositories</li>
+      </ul>
+  </nav>
         <div class="proDetails hide">
+          <div id="image"
             <a href="https://avatars3.githubusercontent.com/u/583231?v=3&s=400" id="avatar">
-                <img src="http://lorempixel.com/400/200/cats" alt="Octocat Picture" height="110" width="110" id="avatarPic">
+                <img src="http://lorempixel.com/400/200/cats" alt="Octocat Picture" id="avatarPic">
             </a>
+          </div>
             <div class="details">
             <h1 id="proName">{name}</h1>
             <h3 id="proLogin">{login}</h3>
@@ -94,9 +95,9 @@
               <li><span class="octicon octicon-location"></span><span id="proLoc">{location}</span></li>
               <li id="proEmail"><span class="octicon octicon-mail"></span> <a class="email" href="mailto:octocat@github.com"><span id="email">{email}</span></a></li>
               <li id="proLink"><span class="octicon octicon-link"></span> <a class="blogLink" href="http://www.github.com/blog"><span id="link">{link}</span></a></li>
+              <li id="join"><span class="octicon octicon-clock"></span><span id="joined">{joined}</span></li>
             </ul>
           </div>
-        </div>
         <div class="repositories hidden">
           <table>
               <tr class="popRepo" id="first">
@@ -146,9 +147,8 @@
               </tr>
       </table>
     </div>
-    </div>
+    <button class="follow" id="follow1"><span class="octicon octicon-person"></span> Follow</button>
     <div class="stats hide">
-    <button><span class="octicon octicon-person"></span> Follow</button>
     <div class="stat">
       <strong id="followers">{followers}</strong><br>Followers
     </div>
@@ -159,7 +159,16 @@
       <strong id="following">{following}</strong><br>Following
     </div>
   </div>
+</div>
     <div class="container hide">
+      <nav class="tabs2">
+          <div>
+              <a class="tab2 active2" id="about">contributions</a>
+              <a class="tab2" id="repos">Repositories</a>
+              <a class="tab2" id="activity">Public Activity</a>
+              <a id=liButton><button class="follow" id="follow2"><span class="octicon octicon-person"></span> Follow</button></a>
+          </div>
+      </nav>
         <table>
             <thead>
                 <tr class="popRepo">
@@ -215,6 +224,7 @@
             </tbody>
         </table>
     </div>
+  </div>
     <select id="changePro">
       <option value="octocat">octocat</option>
       <option value="gatorpazz">gatorpazz</option>

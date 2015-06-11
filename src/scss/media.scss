@@ -1,0 +1,43 @@
+@media only screen and (min-width: 45em) {
+    #superContainer {
+      margin-left: 15%;
+    }
+    .proDetails {
+      float: left;
+      width: 15em;
+      #image {
+        height: 2.3in;
+        width: 2.3in;
+      }
+      .details {
+        width: 100%;
+        margin: 0;
+        #join {
+          display: list-item;
+        }
+      }
+    }
+    .stats {
+      float: left;
+    }
+    .tabs {
+      display: none;
+    }
+    .tabs2 {
+      display: block;
+    }
+    .container {
+      float: left;
+      width: 60%;
+      max-width: 45em;
+    }
+    #follow1 {
+      display: none;
+    }
+    #follow2 {
+      display: inline-block;
+    }
+    select {
+      display: none;
+    }
+}

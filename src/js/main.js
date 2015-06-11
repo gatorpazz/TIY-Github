@@ -51,6 +51,9 @@ $.getJSON("../../api/github/users/octocat/octocat.json")
     $userBlogSite = $('#proLink a');
     $userBlogSite.attr('href', octocat.blog);
 
+    $joined = $('#joined');
+    $joined.text(octocat.created_at);
+
     $followers = $('#followers');
     $followers.text(octocat.followers);
 
@@ -195,6 +198,9 @@ $('#changePro').change(function profileChange() {
 
         $userBlogSite = $('#proLink a');
         $userBlogSite.attr('href', octocat.blog);
+
+        $joined = $('#joined');
+        $joined.text(octocat.created_at);
 
         $followers = $('#followers');
         $followers.text(octocat.followers);

@@ -77,6 +77,43 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.grid {
+  max-width: 80%;
+  width: 100%;
+  margin: 0 auto; }
+  .grid .unit, .grid .unit-2, .grid .unit-3, .grid .unit-4, .grid .unit-5 {
+    float: left;
+    width: 20%;
+    height: 2em;
+    line-height: 2em;
+    box-sizing: border-box;
+    padding-left: 1em;
+    padding-right: 1em; }
+  .grid .unit-2 {
+    width: 40%; }
+  .grid .unit-3 {
+    width: 60%; }
+  .grid .unit-4 {
+    width: 80%; }
+  .grid .unit-5 {
+    width: 100%; }
+  .grid .offset-1 {
+    margin-left: 20%; }
+  .grid .offset-2 {
+    margin-left: 40%; }
+  .grid .offset-3 {
+    margin-left: 60%; }
+  .grid .offset-4 {
+    margin-left: 80%; }
+
+@media screen and (max-width: 30em) {
+  .grid .unit, .grid .unit-2, .grid .unit-3, .grid .unit-4, .grid .unit-5 {
+    width: 100%; }
+  .grid .unit-2 {
+    width: 100%; }
+  .grid .unit-3 {
+    width: 100%; } }
+
 body {
   background-color: #FAFAFA; }
 
@@ -104,10 +141,25 @@ body {
   padding: 0;
   margin: 0; }
 
-.top {
+.tabs2 {
+  display: none; }
+
+.tabs2 ul {
+  padding: 0;
+  margin: 0; }
+
+.tabs2 .tab2 {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  width: 10em;
   background-color: white;
-  border-bottom: 1px solid #EBEBEB;
-  margin-top: 3ex; }
+  padding: 1ex 0;
+  color: #666666; }
+
+#liButton {
+  display: inline-block;
+  list-style: none; }
 
 .repositories table {
   border: none; }
@@ -116,16 +168,29 @@ body {
   border-top: none; }
 
 .proDetails {
-  padding-left: 1em; }
+  background-color: white;
+  padding-left: 1em;
+  border-bottom: 1px solid #EBEBEB; }
 
 .details {
-  display:inline-block;
-  margin-left: 2em;
-}
+  display: inline-block;
+  margin-left: 2em; }
+
+#join {
+  display: none; }
 
 .proDetails h1 {
   font-size: 14pt;
   margin-bottom: 1ex; }
+
+#image {
+  height: 1.4in;
+  width: 1.4in;
+  float: left; }
+
+.proDetails img {
+  height: auto;
+  width: 100%; }
 
 .proDetails h3 {
   font-size: 10pt;
@@ -147,13 +212,12 @@ body {
   color: #4078C0; }
 
 .proDetails #avatar {
-  float: left;
-}
+  float: left; }
 
 .container {
   margin: 1ex; }
 
-.stats button {
+.follow {
   width: 100%;
   margin-top: 1ex;
   margin-bottom: 2ex;
@@ -164,6 +228,11 @@ body {
   font-weight: bold;
   padding: 1.5ex 0;
   border-radius: 2%; }
+
+#follow2 {
+  display: none;
+  width: 1in;
+  padding: 1ex 0; }
 
 .stats {
   padding: 1ex 1ex 3ex 1ex;
@@ -270,13 +339,14 @@ th {
  *    `:before` to contain the top-margins of child elements.
  */
 .clearfix:before,
-.clearfix:after {
+.grid:before,
+.clearfix:after, .grid:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */ }
 
-.clearfix:after {
+.clearfix:after, .grid:after {
   clear: both; }
 
 /* ==========================================================================
@@ -284,6 +354,37 @@ th {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media only screen and (min-width: 45em) {
+  #superContainer {
+    margin-left: 15%; }
+  .proDetails {
+    float: left;
+    width: 15em; }
+    .proDetails #image {
+      height: 2.3in;
+      width: 2.3in; }
+    .proDetails .details {
+      width: 100%;
+      margin: 0; }
+      .proDetails .details #join {
+        display: list-item; }
+  .stats {
+    float: left; }
+  .tabs {
+    display: none; }
+  .tabs2 {
+    display: block; }
+  .container {
+    float: left;
+    width: 60%;
+    max-width: 45em; }
+  #follow1 {
+    display: none; }
+  #follow2 {
+    display: inline-block; }
+  select {
+    display: none; } }
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
