@@ -150,6 +150,9 @@ textarea {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+   @import "media";
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
